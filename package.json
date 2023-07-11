@@ -1,0 +1,31 @@
+{
+  "name": "tegisto-subgraphs",
+  "description": "Tegisto Subgraphs",
+  "version": "1.0.0",
+  "author": "Tegisto",
+  "license": "GPL-3.0-or-later",
+  "workspaces": [
+    "subgraphs/**/*"
+  ],
+  "scripts": {
+    "codegen": "turbo run codegen",
+    "build": "turbo run build",
+    "format:check": "prettier --check '*/**/*.{js,ts}'",
+    "format:write": "prettier --write '*/**/*.{js,ts}'",
+    "lint": "eslint '*/**/*.{js,ts}'",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@graphprotocol/graph-cli": "^0.51.2",
+    "@graphprotocol/graph-ts": "^0.31.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.4.0",
+    "turbo": "^1.10.7",
+    "typescript": "^5.1.6"
+  }
+}

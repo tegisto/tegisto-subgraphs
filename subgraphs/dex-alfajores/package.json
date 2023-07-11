@@ -1,0 +1,12 @@
+{
+  "name": "dex",
+  "description": "Tegisto Subgraphs",
+  "version": "1.0.0",
+  "author": "Tegisto",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "deploy": "graph deploy --product hosted-service aahunter1990/tegisto-dex-alfajores subgraph.yaml"
+  }
+}
